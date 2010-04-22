@@ -1,0 +1,16 @@
+{% block content %}
+
+{% if stories %}
+Select a story to begin.
+
+<ul>
+{% for story in stories %}
+<li>{{ story.name }}</li>
+{% endfor %}
+</ul>
+
+{% else %}
+No stories created.
+{% endif %}
+
+{% endblock %}
