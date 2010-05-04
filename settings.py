@@ -1,4 +1,4 @@
-# Django settings for mongoose project.
+# Django settings for akimbo project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -10,12 +10,12 @@ ADMINS = (
 MANAGERS = ADMINS
 
 #DATABASE_ENGINE = 'django.db.backends.sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#DATABASE_NAME = '/tmp/mongoose.db'             # Or path to database file if using sqlite3.
+#DATABASE_NAME = '/tmp/akimbo.db'             # Or path to database file if using sqlite3.
 
 DATABASE_ENGINE = 'postgresql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'mongoose'             # Or path to database file if using sqlite3.
-DATABASE_USER = 'mongoose'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'mongoose'         # Not used with sqlite3.
+DATABASE_NAME = 'akimbo'             # Or path to database file if using sqlite3.
+DATABASE_USER = 'akimbo'             # Not used with sqlite3.
+DATABASE_PASSWORD = 'akimbo'         # Not used with sqlite3.
 DATABASE_HOST = 'localhost'             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = '5432'             # Set to empty string for default. Not used with sqlite3.
 
@@ -68,11 +68,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'mongoose.urls'
+ROOT_URLCONF = 'akimbo.urls'
 
 TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
-    '/home/jdob/vault/code/mongoose/templates',
+    '/home/jdob/vault/code/akimbo/templates',
 )
 
 INSTALLED_APPS = (
@@ -81,5 +81,5 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.admin',
-    'mongoose.core',
+    'akimbo.core',
 )
